@@ -3,7 +3,7 @@
 ###############################################################
 #  TITRE: 
 #
-#  AUTEUR:   Xavier
+#  AUTEUR:   Samuel
 #  VERSION: 
 #  CREATION:  
 #  MODIFIE: 
