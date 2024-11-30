@@ -9,16 +9,16 @@ nodes:
   # Wazuh indexer nodes
   indexer:
     - name: wazidx1
-      ip: "192.168.12.181"
+      ip: "192.168.56.81"
 
   server:
     - name: wazidx1
-      ip: "192.168.12.181"
+      ip: "192.168.56.81"
 
   # Wazuh dashboard nodes
   dashboard:
     - name: wazidx1
-      ip: "192.168.12.181"
+      ip: "192.168.56.81"
 '> config.yml 
 
 bash wazuh-install.sh --generate-config-files
@@ -34,16 +34,6 @@ tar -axf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt -O | gr
 bash wazuh-install.sh --wazuh-server wazidx1
 
 bash wazuh-install.sh --wazuh-dashboard wazidx1
-
-#echo "
-#hosts:
-#  - default:
-#      url: https://192.168.12.181
-#      port: 55000
-#      username: wazuh-wui
-#      password: wazuh-wui
-#      run_as: false
-#" >/usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml
 
 systemctl restart wazuh-dashboard
 
