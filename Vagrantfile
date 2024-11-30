@@ -41,9 +41,9 @@ Vagrant.configure(2) do |config|
 
 	# set servers list and their parameters
 	NODES = [
-  	{ :hostname => "wazidx1", :ip => "192.168.12.181", :cpus => 4, :mem => 6000, :type => "server" },
-  	{ :hostname => "wazagent1", :ip => "192.168.12.182", :cpus => 2, :mem => 2048, :type => "agent" },
-  	{ :hostname => "wazagent2", :ip => "192.168.12.183", :cpus => 2, :mem => 2048, :type => "agent" }
+  	{ :hostname => "wazidx1", :ip => "192.168.56.81", :cpus => 4, :mem => 6000, :type => "server" },
+  	{ :hostname => "wazagent1", :ip => "192.168.56.82", :cpus => 2, :mem => 2048, :type => "agent" },
+  	{ :hostname => "wazagent2", :ip => "192.168.56.83", :cpus => 2, :mem => 2048, :type => "agent" }
 	]
 
 	# define /etc/hosts for all servers
